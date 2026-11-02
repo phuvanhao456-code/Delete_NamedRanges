@@ -1,0 +1,6 @@
+Sub Delete_NamedRanges()
+    Dim MyName As Name
+    For Each MyName In Names
+        ActiveWorkbook.Names(MyName.Name).Delete
+    Next MyName
+End Sub
